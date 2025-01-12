@@ -83,9 +83,9 @@ body{
 .heading h2{
     color: #fff;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
+    margin-bottom: -50px;
     font-size: 42px;
-    text-transform: uppercase;
 }
 
 .slideshow{
@@ -149,7 +149,7 @@ body{
     backface-visibility: hidden;
 }
 
-.two-heading h2{
+.two-heading,.three-heading h2{
     color: #fff;
     text-align: center;
     margin-top: 50px;
@@ -167,6 +167,53 @@ body{
     height: 100vh; /* Full viewport height */
     margin-top: 50px;
   }
+
+  @media (min-width: 750px) and (max-width: 900px) {
+    .wrap {
+      display: grid; /* Ensure the container is set to grid layout */
+      grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+      gap: 50px; /* Spacing between grid items */
+    }
+  
+  .box {
+    height: 200px;
+    width: 150px;
+  }
+}
+
+  @media (min-width: 350px) and (max-width: 749px) {
+    .wrap {
+      display: grid; /* Ensure the container is set to grid layout */
+      grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+      gap: 50px; /* Spacing between grid items */
+    }
+  
+  
+  .box {
+    height: 200px;
+    width: 150px;
+  }
+  .third-sec{
+    margin-top: 450px;
+  }
+  .three-heading h2{
+    font-size: 28px;
+    margin-bottom: -70px;
+  }
+  .slideshow{
+    width: 350px;
+    height: 500px;
+  }
+  .slideshow .slide h2{
+    font-size: 5rem;
+  }
+  .heading h2 {
+    font-size: 36px;
+  }
+  }
+  
+  
+  
   
   .box{
    position: relative;
