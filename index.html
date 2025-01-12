@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="" href="style.css">
+    <title>Css Transform</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 active" aria-current="page" href="#css-transform">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#2d-transform">2D transformation</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#3d-transform">3D transformation</a>
+                </li>
+               
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+      <div class="container " id="css-transform">
+        <div class="heading">
+            <h2>Seamless Motion: CSS Transform Techniques in Action</h2>
+        </div>
+        <div class="row infinite">
+            <div class="slideshow">
+                <div class="slide" style="--i:0">
+                    <h2>01<span>Agra</span></h2>
+                    <img src="https://img.freepik.com/premium-photo/agra-taj-mahal-side-view-front-view-photography_862994-45179.jpg">
+                </div>
+                <div class="slide" style="--i:1">
+                    <h2>02<span>Jaipur</span></h2>
+                    <img src="https://cdn.pixabay.com/photo/2020/09/20/14/53/corridor-5587351_1280.jpg">
+                </div>
+                <div class="slide" style="--i:2">
+                    <h2>03<span>Amritsar</span></h2>
+                    <img src="https://media.istockphoto.com/id/119925972/photo/golden-temple-amritsar.jpg?s=612x612&w=0&k=20&c=dOlIAwyri9rkYqZh31aYIWc7Yv-j4q9-fR0ajCmX9HU=">
+                </div>
+                <div class="slide" style="--i:3">
+                    <h2>04<span>Jaisalmer</span></h2>
+                    <img src="https://framingfootprints.com/wp-content/uploads/2020/07/IMG_7386.jpg">
+                </div>
+                <div class="slide" style="--i:4">
+                    <h2>05<span>Kashmir</span></h2>
+                    <img src="https://images.unsplash.com/photo-1657697488985-a1f51bf82c32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM2fHxrYXNobWlyfGVufDB8MXwwfHx8MA%3D%3D">
+                </div>
+                <div class="slide" style="--i:5">
+                    <h2>06<span>Munnar</span></h2>
+                    <img src="https://images.pexels.com/photos/1065753/pexels-photo-1065753.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="slide" style="--i:6">
+                    <h2>07<span>Ledakh</span></h2>
+                    <img src="https://images.pexels.com/photos/14095829/pexels-photo-14095829.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="slide" style="--i:7">
+                    <h2>08<span>Varanasi</span></h2>
+                    <img src="https://images.pexels.com/photos/20518303/pexels-photo-20518303/free-photo-of-ganga-aarti-ceremony-on-street-in-india.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="slide" style="--i:8">
+                    <h2>09<span>Shillong</span></h2>
+                    <img src="https://images.pexels.com/photos/30123385/pexels-photo-30123385/free-photo-of-living-root-bridge-in-lush-forest-shillong-india.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                
+              </div>
+        </div>
+       
+      </div>
+      <div class="container" id="2d-transform">
+        <div class="two-heading">
+            <h2>2D Transformation</h2>
+        </div>
+        <div class="wrap">
+            <div class="box scaleX">
+                <img src="https://images.pexels.com/photos/3361480/pexels-photo-3361480.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">scaleX</p>
+            </div>
+            <div class="box scaleX">
+                <img src="https://images.pexels.com/photos/14702568/pexels-photo-14702568.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">scaleY</p>
+            </div>
+            <div class="box scale">
+                <img src="https://images.pexels.com/photos/16738852/pexels-photo-16738852/free-photo-of-entrance-to-the-city-palace-jaipur-india.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">scale</p>
+            </div>
+           
+            <div class="box rotate">
+                <img src="https://images.pexels.com/photos/9902399/pexels-photo-9902399.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">rotate</p>
+            </div>
+
+            <!---second-->
+
+            <div class="box skew">
+                <img src="https://images.pexels.com/photos/5480518/pexels-photo-5480518.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">skew</p>
+            </div>
+            <div class="box matrix3d">
+                <img src="https://images.pexels.com/photos/15431726/pexels-photo-15431726/free-photo-of-beautiful-palace-with-domes.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">smatrix3d</p>
+            </div>
+            <div class="box translate3d">
+                <img src="https://images.pexels.com/photos/20418514/pexels-photo-20418514/free-photo-of-golden-ornamented-chamber-in-mysore-palace-in-india.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">translate3d</p>
+            </div>
+           
+            <div class="box translateZ">
+                <img src="https://images.pexels.com/photos/17702920/pexels-photo-17702920/free-photo-of-beautiful-interior-of-mysore-palace-in-india.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <p class="caption">translateZ</p>
+            </div>
+
+
+            <!----end-->
+
+       
+          </div>
+      </div>
+      <div class="container" id="3d-transform">
+        <div class="two-heading">
+            <h2>3D Effects and Perspective: Taking CSS to the Next Level</h2>
+        </div>
+        <div class="wrapper">
+        
+            <div class="cube">
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side top"></div>
+                <div class="side bottom"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+            </div>
+          </div>
+      </div>
+    <footer>
+        <p>&copy; 2025 by <a href="#">Neethu Janardhanan</a>. All rights reserved.</p>
+    </footer>
+      
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
